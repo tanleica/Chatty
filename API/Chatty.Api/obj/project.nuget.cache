@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "hbcYDIglmD2d1/fVUBBbnpMqyxyZ8HK2jWhOyG1rCPFAYnOSz4SG0KABtccwgrXD6+qyWz197REaF8bNSG8QaQ==",
+  "success": true,
+  "projectFilePath": "E:\\00_DOTNET\\Chatty\\API\\Chatty.Api\\Chatty.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Anh Tan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
