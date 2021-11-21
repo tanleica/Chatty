@@ -5,8 +5,8 @@ import ChatWindow from './ChatWindow';
 import ChatInput from './ChatInput';
 
 const Chat = () => {
-    const [ connection, setConnection ] = useState(null);
-    const [ chat, setChat ] = useState([]);
+    const [connection, setConnection] = useState(null);
+    const [chat, setChat] = useState([]);
     const latestChat = useRef(null);
 
     latestChat.current = chat;
@@ -17,19 +17,24 @@ const Chat = () => {
             .withAutomaticReconnect()
             .build();
 
+            console.log("newConnection = ", newConnection)
+
         setConnection(newConnection);
     }, []);
 
     useEffect(() => {
+
+        console.log("connection = ", connection)
+
         if (connection) {
             connection.start()
                 .then(result => {
-                    console.log('Connected!');
-    
+                    console.log('Connected! ', result);
+
                     connection.on('ReceiveMessage', message => {
                         const updatedChat = [...latestChat.current];
                         updatedChat.push(message);
-                    
+
                         setChat(updatedChat);
                     });
                 })
@@ -43,11 +48,12 @@ const Chat = () => {
             message: message
         };
 
-        if (connection.connectionStarted) {
+        if (connection._connectionStarted) {
             try {
+                console.log("connection = ", connection)
                 await connection.send('SendMessage', chatMessage);
             }
-            catch(e) {
+            catch (e) {
                 console.log(e);
             }
         }
@@ -60,7 +66,7 @@ const Chat = () => {
         <div>
             <ChatInput sendMessage={sendMessage} />
             <hr />
-            <ChatWindow chat={chat}/>
+            <ChatWindow chat={chat} />
         </div>
     );
 };
