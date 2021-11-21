@@ -26,3 +26,4 @@ E:\00_DOTNET\Chatty\API\Chatty.Api\obj\Debug\net5.0\Chatty.Api.dll
 E:\00_DOTNET\Chatty\API\Chatty.Api\obj\Debug\net5.0\ref\Chatty.Api.dll
 E:\00_DOTNET\Chatty\API\Chatty.Api\obj\Debug\net5.0\Chatty.Api.pdb
 E:\00_DOTNET\Chatty\API\Chatty.Api\obj\Debug\net5.0\Chatty.Api.genruntimeconfig.cache
+E:\00_DOTNET\Chatty\API\Chatty.Api\obj\Debug\net5.0\Chatty.Api.csproj.AssemblyReference.cache
